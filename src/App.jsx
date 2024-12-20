@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 import Beranda from "./pages/Beranda";
 import Kontak from "./pages/Kontak";
 import Produk from "./Pages/Produk";
@@ -13,7 +13,7 @@ import EditProduk from "./Pages/editproduk";
 import MenuAdmin from "./Pages/MenuAdmin";
 import DetailProduk from "./Pages/DetailProduk";
 import { AuthProvider } from "./Auth/AuthContext";
-import PublicRoutes from "./components/PublicRoutes";
+import PublicRoutes from "./Components/PublicRoutes";
 
 const Layout = () => {
   const location = useLocation();
