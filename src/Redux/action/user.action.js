@@ -13,7 +13,7 @@ export const createPelanggan = (pelanggan) => async (dispatch) => {
 
     const data = await response.json();
     console.log(data);
-    window.location.href = "/login";
+    window.location.href = "/";
     dispatch({
       type: pelangganActions.CREATE_PELANGGAN_SUCCESS,
       payload: data,
@@ -37,13 +37,14 @@ export const loginPelanggan = (pelanggan) => async (dispatch) => {
       },
       body: JSON.stringify(pelanggan),
     });
+    console.log(pelanggan)
     if (response.status === 500) {
       console.log(response.status);
     } else {
       const data = await response.json();
       const token = data.token;
       localStorage.setItem("token", token);
-      window.location.href = "admin";
+      window.location.href = "/";
       dispatch({
         type: pelangganActions.CREATE_PELANGGAN_SUCCESS,
         payload: data,
