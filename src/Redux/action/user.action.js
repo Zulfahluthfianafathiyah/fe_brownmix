@@ -13,7 +13,7 @@ export const createPelanggan = (pelanggan) => async (dispatch) => {
 
     const data = await response.json();
     console.log(data);
-    window.location.href = "/";
+    window.location.href = "/login";
     dispatch({
       type: pelangganActions.CREATE_PELANGGAN_SUCCESS,
       payload: data,
