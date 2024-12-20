@@ -3,7 +3,7 @@ import { pelangganActions } from "../actionTypes";
 export const createPelanggan = (pelanggan) => async (dispatch) => {
   dispatch({ type: pelangganActions.CREATE_PELANGGAN_REQUEST });
   try {
-    const response = await fetch("https://bebrownmix.vercel.app/user/RegistUser", {
+    const response = await fetch("https://bebrownmix.vercel.app/api/user/RegistUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const createPelanggan = (pelanggan) => async (dispatch) => {
 export const loginPelanggan = (pelanggan) => async (dispatch) => {
   dispatch({ type: pelangganActions.CREATE_PELANGGAN_REQUEST });
   try {
-    const response = await fetch("https://bebrownmix.vercel.app/user/loginUser", {
+    const response = await fetch("https://bebrownmix.vercel.app/api/user/loginUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
