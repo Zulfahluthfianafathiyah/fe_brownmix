@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Beranda from "./pages/Beranda";
-import Kontak from "./pages/Kontak";
+import Beranda from "./Pages/Beranda";
+import Kontak from "./Pages/Kontak";
 import Produk from "./Pages/Produk";
 import Layanan from "./Pages/Layanan";
 import Tentang from "./Pages/Tentang";
